@@ -1,0 +1,10 @@
+@media screen and (max-width: 430px) {
+    @import url(./src/reset.css);
+    @import url(./src/images.css);
+    @import url(./src/pc_version.css);
+    @import url(./src/global.css);
+    
+    footer{
+        display: none;
+    }
+}
