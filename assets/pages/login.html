@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VÔLEI DELAS | Login</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+
+  <style>
+    .login-forms-wrapper {
+      position: relative;
+      left: 1px;
+    }
+
+    .btn-login {
+      position: relative;
+      left: 1%;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    form {
+      position: relative;
+      z-index: 1;
+      background: #ffffff;
+      max-width: 200px;
+      margin: 0 auto 50px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    form input {
+      font-family: "roboto", sans-serif;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 10px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    form button {
+      font-family: "roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background: #C48DB8;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #ffffff;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+
+    body {
+      background: #E4A4D6;
+    }
+
+    .buttons-login-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .option-log-in {
+      text-align: center;
+    }
+
+    .logo {
+      align-item: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first">
+    <header class="login-form">
+      <img class="logo" src="img/image 412.png" alt="image-principal" height="30" width="30">
+      <!--Só esperando você colocar a foto o endereço da foto-->
+      <p>VÔLEI DELAS</p>
+      <div class="login-forms-wrapper">
+        
+  <form action="#" method="post">
+    
+    <label>Login:</label><br>
+    <input class="login-input text" type="text"                     placeholder="Email ou nome de usuário" id="login"><br>
+
+    <label>Senha:</label><br>
+    <input class="login-input password" type="password"             placeholder="Digite a sua senha" id="senha"><br>
+    
+    <input class="btn-login" type="submit" onclick="logar();        return false"><br>
+      
+  </form>
+        
+      </div>
+    </header>
+  </div>
+  <main>
+    <h4 class="option-log-in">Ou faça login usando:</h4>
+    <div class="buttons-login-wrapper">
+      <a href="" class="button-login google">
+        <img src="" alt="instagram" class="login-image">
+        <!--Só esperando você colocar a foto o endereço da foto-->
+      </a>
+      <a href="" class="button-login number">
+        <img class="login-image" src="" alt="google">
+        <!--Só esperando você colocar a foto o endereço da foto-->
+      </a>
+      <a href="" class="button-login facebook">
+        <img class="login-image facebook" src="" alt="facebook">
+        <!--Só esperando você colocar a foto o endereço da foto-->
+      </a>
+      <a href="" class="button-login facebook">
+        <img class="login-image facebook" src="" alt="twitter">
+        <!--Só esperando você colocar a foto o endereço da foto-->
+      </a>
+    </div>
+    <p>Não possui cadastro? <a href="./assets/pages/singin.html">Cadastre-se</a></p>
+  </main>
+  <footer>
+    <h1>Esta aplicação ainda não está disponível para Computador</h1>
+  </footer>
+
+<script src="script.js">
+   function logar() {
+
+  var login = document.getElementById('login').value;
+  var senha = document.getElementById('senha').value;
+
+  if(login == "a" && senha == "a"){
+    alert('bem vindo de volta')
+    location.href = "page.html"
+  }
+  else{
+    alert('nome ou senha errado')
+  }
+}
+  </script>
+  
+</body>
+
+</html>
